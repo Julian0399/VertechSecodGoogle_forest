@@ -1,0 +1,42 @@
+version: '3.7'
+services:
+  web:
+    container_name: web
+    build: ./backend # Ruta al directorio que contiene el Dockerfile para Django
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - ./backend:/code
+    ports:
+      - "8000:8000"
+    environment:
+      - PG_USER=postgres
+      - PG_PASSWORD=postgres
+      - PG_DB=forestdb
+      - PG_HOST=db
+      - PG_PORT=5432
+    depends_on:
+      - db
+  frontend:
+    container_name: frontend
+    build: ./frontend
+    ports:
+      - "9000:9000"
+    environment:
+      - WATCHPACK_POLLING=true
+    command: npm run dev
+  db:
+    container_name: db
+    image: postgres:16
+    restart: always
+    volumes:
+      - postgres-data:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=forestdb
+    ports:
+      - "5432:5432"
+volumes:
+  postgres-data:
+
+
