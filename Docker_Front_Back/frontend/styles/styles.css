@@ -1,0 +1,93 @@
+/* Estilos para el formulario */
+.form-container {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+  
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #ffffff;
+  }
+  
+  .form-container h2 {
+    
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-right: 1rem;
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input {
+    
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+  }
+  
+  .form-group button {
+    
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 3px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .form-group button:hover {
+    background-color: #0056b3;
+  }
+  .dos-contenedores {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  
+  /* Estilos para el contenedor de opciones a la izquierda */
+  .contenedor-izquierda {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Estilos para los checkboxes */
+  .opciones-checkbox label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  /* Estilos para el contenedor de la gráfica/datos a la derecha */
+  .contenedor-derecha {
+    flex: 1;
+    margin-left: 20px; /* Espacio entre los contenedores */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+  }
+  
+  /* Estilos para la lista de datos */
+  .contenedor-derecha ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  /* Estilos para los elementos de la lista */
+  .contenedor-derecha li {
+    margin-bottom: 5px;
+  }
