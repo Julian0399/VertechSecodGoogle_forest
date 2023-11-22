@@ -25,7 +25,7 @@ To use
 4.view the graphs (coming soon)
 
 
-You can watch the operation video at : 
+You can watch the operation video at : https://youtu.be/9hYtH5rA4zA
 
-Thank you for using this file.
+Thank you for using this file. 
 
